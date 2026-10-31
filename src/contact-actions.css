@@ -1,0 +1,16 @@
+.nav .nav-call{display:flex;align-items:center;justify-content:center;gap:8px;white-space:nowrap;line-height:1;min-height:42px}
+.floating-actions{position:fixed;right:19px;bottom:19px;z-index:45;display:flex;align-items:center;gap:10px}
+.floating-actions>a{height:49px;min-width:49px;padding:0 15px;border-radius:999px;display:flex;align-items:center;justify-content:center;gap:8px;color:#fff;font-size:11px;font-weight:700;box-shadow:0 6px 22px #071a3240;transition:transform .18s,box-shadow .18s}
+.floating-actions>a:hover{transform:translateY(-3px);box-shadow:0 9px 24px #071a3252}
+.floating-actions .floating-call{background:#1878eb}
+.floating-actions .floating-wa{position:static;width:auto;background:#18a96b}
+.floating-actions svg{flex:0 0 auto}
+@media(max-width:700px){
+ .nav .nav-call{width:100%;min-height:48px;padding:14px 18px;margin-top:12px;border:0;border-radius:7px;background:#0b2342;color:#fff;font-size:14px;letter-spacing:.01em;box-shadow:0 5px 14px #0b23421c}
+ .nav .nav-call svg{width:18px;height:18px}
+ .nav .nav-call:hover,.nav .nav-call:focus-visible{background:#1674e8;color:#fff}
+ .floating-actions{right:12px;bottom:12px;gap:8px}
+ .floating-actions>a{height:45px;min-width:45px;padding:0 13px;font-size:10px}
+ .floating-actions>a svg{width:19px;height:19px}
+}
+@media(max-width:370px){.floating-actions{right:10px;bottom:10px;gap:7px}.floating-actions>a{height:42px;min-width:42px;padding:0 10px;font-size:9px}}
